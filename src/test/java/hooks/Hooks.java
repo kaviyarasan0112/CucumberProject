@@ -42,7 +42,7 @@ public class Hooks extends BaseClass {
 	@After
 	public void postcondition(Scenario sc){
 		System.out.println(sc.getStatus()); 
-		driver.close();
+		//driver.close();
 
 	}
 
