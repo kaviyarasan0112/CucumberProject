@@ -7,7 +7,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 
 @CucumberOptions(features="src/test/java/features/F01_Login.feature",
-				 glue= {"steps","Hooks"},  //Include the package name of the step definitions classes
+				 glue= {"steps","hooks"},  //Include the package name of the step definitions classes
 				 monochrome=true,//To remove the unwanted characters in the console
 				 tags= {"@Test"},
 				 plugin= {"pretty","html:target/cucumber-reports",
