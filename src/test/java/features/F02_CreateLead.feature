@@ -16,7 +16,7 @@ And Enter the firstname as <Fname>
 And Enter the lastname as <LName>
 When Click on the link Create Lead 
 Then View Lead Page should be displayed 
- 	|Fname|
+ 	
 Examples:
 |CompanyName|Fname|LName|
 |TCS|Sachin|Tendulkar|

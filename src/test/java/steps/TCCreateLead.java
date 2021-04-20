@@ -74,7 +74,7 @@ public class TCCreateLead extends BaseClass{
 	}
 	@Then("View Lead Page should be displayed")
 	public void viewLeadPageDisplayed() {
-		//viewLeadPage=new ViewLeadPage_C(driver);
+		viewLeadPage=new ViewLeadPage_C(driver);
 		
 	}	
 }
