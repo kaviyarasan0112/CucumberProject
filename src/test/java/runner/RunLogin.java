@@ -2,6 +2,8 @@ package runner;
 
 
 
+import org.testng.annotations.DataProvider;
+
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
@@ -9,7 +11,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(features="src/test/java/features/F01_Login.feature",
 				 glue= {"steps","hooks"},  //Include the package name of the step definitions classes
 				 monochrome=true,//To remove the unwanted characters in the console
-				 tags= {"@Test"},
+				 //tags= {"@Test"},
 				 plugin= {"pretty","html:target/cucumber-reports",
 						"json:target/cucumber-reports/Cucumber.json",
 					"junit:target/cucumber-reports/Cucumber.xml"}
@@ -19,12 +21,12 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 public class RunLogin extends AbstractTestNGCucumberTests {
 
-	/*
-	 * @DataProvider(parallel=true) public Object[][] scenarios(){ return
-	 * super.scenarios();
-	 * 
-	 * }
-	 */
+	
+	  @DataProvider(parallel=true) 
+	  public Object[][] scenarios(){ 
+	  return super.scenarios();
+	  }
+	 
 	
 	/*
 	 * @AfterClass public static void writeExtentReport() { Reporter.; }
