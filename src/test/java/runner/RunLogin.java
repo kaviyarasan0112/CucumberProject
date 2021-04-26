@@ -22,10 +22,12 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 public class RunLogin extends AbstractTestNGCucumberTests {
 
 	
-	  @DataProvider(parallel=true) 
+	/* 
+	@DataProvider(parallel=true) 
 	  public Object[][] scenarios(){ 
 	  return super.scenarios();
 	  }
+	  */
 	 
 	
 	/*
